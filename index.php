@@ -17,11 +17,7 @@
     <!-- Head[Start] -->
     <header>
         <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header"><a class="navbar-brand" href="select.php">データ一覧</a></div>
-                <div class="navbar-header"><a class="navbar-brand" href="login.php">ログイン</a></div>
-                <div class="navbar-header"><a class="navbar-brand" href="logout.php">ログアウト</a></div>
-            </div>
+            <div class="navbar-header"><a class="navbar-brand" href="select.php">データ一覧</a></div>
         </nav>
     </header>
     <!-- Head[End] -->
