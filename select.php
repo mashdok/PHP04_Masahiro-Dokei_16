@@ -20,13 +20,8 @@ if ($status == false) {
 } else {
     while ($r = $stmt->fetch(PDO::FETCH_ASSOC)) {
         $view .= '<p>';
-        $view .= '<a href="detail.php?id=' . $r["id"] . '">';
         $view .= h($r['id']) . "　" . h($r['name']) . "　" . h($r['category']) . "　" . h($r['comment']);
-        $view .= '</a>';
         $view .= "　";
-        $view .= '<a class="btn btn-danger" href="delete.php?id=' . $r['id'] . '">';
-        $view .= '[<i class="glyphicon glyphicon-remove"></i>削除]';
-        $view .= '</a>';
         $view .= '</p>';
     }
 }
@@ -55,10 +50,8 @@ if ($status == false) {
     <!-- Head[Start] -->
     <header>
         <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="index.php">データ登録</a>
-                </div>
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.php">データ登録</a>
             </div>
         </nav>
     </header>
